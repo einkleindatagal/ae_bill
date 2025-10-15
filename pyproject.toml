@@ -1,0 +1,19 @@
+[project]
+name = "ae-bill"
+version = "0.1.0"
+description = "Process bills from Aesthetics & Electrology to simplify claims"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "ipykernel>=7.0.1",
+    "mail-parser>=4.1.4",
+    "pandas>=2.3.3",
+    "pyinstaller>=6.16.0",
+]
+[tool.ruff]
+ignore = ["F401"]
+[tool.Flake8]
+ignore = ["F401"]
+[tool.pyright]
+include = [".venv"]
+exclude = [".git"]
